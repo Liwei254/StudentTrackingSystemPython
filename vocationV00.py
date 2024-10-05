@@ -63,10 +63,6 @@ class FeedbackApp:
 
     # Manager Functions
     def add_teacher(self):
-        if len(self.teachers) >= 3:
-            messagebox.showinfo("Limit", "Cannot add more teachers. Maximum limit reached.")
-            return
-
         new_teacher_name = simpledialog.askstring("Input", "Enter new teacher's name:")
         if new_teacher_name:
             new_teacher = Teacher(new_teacher_name)
