@@ -5,11 +5,14 @@
 Vocational and technical high schools in Kenya provide training in over 130 occupations. The process of tracking students during their practical training periods involves manual paperwork, which can be cumbersome and inefficient. This project aims to digitalize the current processes by proposing a web-based solution for tracking practical training in vocational and technical high schools in Kenya. This Python project is a Teacher-Student Feedback Management System built with Tkinter.
 
 ## Technologies To Be Used
-
-- **Laravel**: Laravel is used as the primary technology for developing the web application.
-- **PHP**: PHP is used as the programming language for backend development.
-- **MySQL**: MySQL is used as the database management system to store and manage data.
-- **HTML/CSS/JavaScript**: These technologies are used for frontend development.
+- **Front-End(User Interface)**: Tkinter, PyQt/PySide, Kivy.
+- **Back-End(Application Logic)**: Flask/Django, FastAPI.
+- **Database(Persistent Storage)**: SQLite, MySQL/PostgreSQL, MongoDB.
+- **Authentication & User Management**: Flask-Login or Django's built-in auth system, OAuth2.0 or OpenID Connect.
+- **Packaging for Distribution**: PyInstaller, cx_Freeze, Electron with Python Back-End.
+- **API Integration**: RESTful APIs, GraphQL.
+- **Deployment(if web-based)**: Heroku/PythonAnywhere, Amazon Web Services(AWS)/Google Cloud Platform(GCP)/Microsoft Azure, Docker
+- **Version Control & CI/CD**: Github/GitLab, Continous Integration/Continous Deployment(CI/CD). 
   
 ## Functionalities
 
