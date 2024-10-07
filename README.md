@@ -60,7 +60,7 @@ To use the Student Tracking Information System:
    ```bash
 https://github.com/Liwei254/StudentTrackingSystemPython.git
 
-## Contributors
+Contributors
 
 - [Your Name](https://github.com/Liwei254)
 
