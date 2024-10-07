@@ -56,12 +56,10 @@ To use the Student Tracking Information System:
 5. Start the Laravel development server.
 6. Access the system via a web browser.
 
-## Clone the repository:
-   
-https://github.com/Liwei254/StudentTrackingSystemPython.git
-
 ## Contributors
 
 - [Your Name](https://github.com/Liwei254)
 
-
+## Clone the repository:
+   ```bash
+https://github.com/Liwei254/StudentTrackingSystemPython.git
