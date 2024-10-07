@@ -57,10 +57,10 @@ To use the Student Tracking Information System:
 6. Access the system via a web browser.
 
 ## Clone the repository:
-   ```bash
+   
 https://github.com/Liwei254/StudentTrackingSystemPython.git
 
-Contributors
+## Contributors
 
 - [Your Name](https://github.com/Liwei254)
 
