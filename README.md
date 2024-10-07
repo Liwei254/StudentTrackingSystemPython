@@ -34,7 +34,7 @@ The motivation behind this project is to simplify the student tracking process, 
 
 ## Goal
 
-The goal of this project is to develop the first web-based student tracking system for vocational high schools in Turkey. The system aims to overcome the limitations of existing systems by offering detailed feedback features tailored to the vocational education system in Turkey, providing essential information about students and companies, and utilizing modern technologies for improved performance, security, and visual quality.
+The goal of this project is to develop the first web-based student tracking system for vocational high schools in Kenya. The system aims to overcome the limitations of existing systems by offering detailed feedback features tailored to the vocational education system in Kenya, providing essential information about students and companies, and utilizing modern technologies for improved performance, security, and visual quality.
 
 ## System Functional Requirements
 
