@@ -58,7 +58,7 @@ To use the Student Tracking Information System:
 
 ## Contributors
 
-- [Your Name](https://github.com/Liwei254)
+- [James Otipa](https://github.com/Liwei254)
 
 ## Clone the repository:
    ```bash
