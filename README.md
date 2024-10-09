@@ -12,8 +12,11 @@ Vocational and technical high schools in Kenya provide training in over 130 occu
 - **Packaging for Distribution**: PyInstaller, cx_Freeze, Electron with Python Back-End.
 - **API Integration**: RESTful APIs, GraphQL.
 - **Deployment(if web-based)**: Heroku/PythonAnywhere, Amazon Web Services(AWS)/Google Cloud Platform(GCP)/Microsoft Azure, Docker
-- **Version Control & CI/CD**: Github/GitLab, Continous Integration/Continous Deployment(CI/CD). 
-  
+- **Version Control & CI/CD**: Github/GitLab, Continous Integration/Continous Deployment(CI/CD).
+- **Data Validation and Security**: Encrypting sensitive information using libraries like ###cryptography.
+                                  : Setting up role-based access control to ensure only authorized users can perform 
+                                    specific actions.
+                                  : Validating input like phone numbers and emails.
 ## Functionalities
 
 The Student Tracking Information System offers the following functionalities:
