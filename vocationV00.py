@@ -22,7 +22,6 @@ class FeedbackApp:
         self.root.title("Teacher-Student Feedback System")
         self.root.geometry("600x400")
         
-        # Predefine 3 teachers with some students
         self.teachers = [
             Teacher("Teacher1"),
             Teacher("Teacher2"),
