@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import messagebox, simpledialog
 
 
-# Define the Student and Teacher classes
 class Student:
     def __init__(self, name="", phone_number="", email_address="", feedback=""):
         self.name = name
