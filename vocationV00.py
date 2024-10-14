@@ -13,7 +13,7 @@ class Student:
 class Teacher:
     def __init__(self, name=""):
         self.name = name
-        self.students = [Student() for _ in range(2)]  # Teachers can have 2 students
+        self.students = [Student() for _ in range(2)] 
 
 
 class FeedbackApp:
