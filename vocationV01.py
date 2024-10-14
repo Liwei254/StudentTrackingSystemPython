@@ -35,7 +35,7 @@ def delete_student(teacher):
     try:
         index = int(input(f"Enter the index of the student to delete (1-{len(teacher.students)}): ")) - 1
         if 0 <= index < len(teacher.students):
-            teacher.students[index] = Student()  # Reset student data
+            teacher.students[index] = Student() 
             print("Student deleted successfully.")
         else:
             print("Invalid index.")
@@ -95,7 +95,7 @@ def main():
     user_type = int(input("Enter user type (1 for Manager, 2 for Teacher): "))
     
     if user_type == 1:
-        # Manager functionalities
+
         while True:
             print("\nManager Menu:")
             print("1. Add Teacher")
@@ -126,7 +126,6 @@ def main():
         if teacher:
             print(f"\n\nTeacher: {teacher.name}")
             
-            # Display students
             print("Existing students:")
             for idx, student in enumerate(teacher.students):
                 if student.name:
