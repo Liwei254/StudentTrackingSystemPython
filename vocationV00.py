@@ -16,7 +16,6 @@ class Teacher:
         self.students = [Student() for _ in range(2)]  # Teachers can have 2 students
 
 
-# Define the main application class
 class FeedbackApp:
     def __init__(self, root):
         self.root = root
