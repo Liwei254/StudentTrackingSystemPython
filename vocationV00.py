@@ -28,7 +28,6 @@ class FeedbackApp:
             Teacher("Teacher3")
         ]
         
-        # Initialize some students
         self.teachers[0].students[0] = Student("Student1", "111-111-1111", "student1@gmail.com", "")
         self.teachers[0].students[1] = Student("Student2", "222-222-2222", "student2@gmail.com", "")
         self.teachers[1].students[0] = Student("Student3", "333-333-3333", "student3@gmail.com", "")
@@ -36,11 +35,10 @@ class FeedbackApp:
         self.teachers[2].students[0] = Student("Student5", "555-555-5555", "student5@gmail.com", "")
         self.teachers[2].students[1] = Student("Student6", "666-666-6666", "student6@gmail.com", "")
 
-        # Create a simple main menu for manager and teacher actions
         self.create_main_menu()
 
     def create_main_menu(self):
-        # Create a menu for Manager
+        
         manager_frame = tk.Frame(self.root)
         manager_frame.pack(pady=10)
         
@@ -50,7 +48,6 @@ class FeedbackApp:
         tk.Button(manager_frame, text="Delete Teacher", command=self.delete_teacher).pack(pady=5)
         tk.Button(manager_frame, text="View All Feedback", command=self.view_all_feedback).pack(pady=5)
         
-        # Create a separate section for Teacher actions
         teacher_frame = tk.Frame(self.root)
         teacher_frame.pack(pady=20)
 
@@ -58,7 +55,6 @@ class FeedbackApp:
 
         tk.Button(teacher_frame, text="Manage Teacher", command=self.select_teacher).pack(pady=5)
 
-    # Manager Functions
     def add_teacher(self):
         new_teacher_name = simpledialog.askstring("Input", "Enter new teacher's name:")
         if new_teacher_name:
@@ -88,7 +84,6 @@ class FeedbackApp:
         else:
             messagebox.showinfo("No Feedback", "No feedback available for any students.")
 
-    # Teacher Functions
     def select_teacher(self):
         teacher_names = [teacher.name for teacher in self.teachers]
         if not teacher_names:
@@ -110,13 +105,11 @@ class FeedbackApp:
 
         tk.Label(teacher_window, text=f"Teacher: {teacher.name}", font=("Helvetica", 14)).pack(pady=5)
 
-        # List students
         student_list = tk.Listbox(teacher_window)
         student_list.pack(pady=10)
         for idx, student in enumerate(teacher.students):
             student_list.insert(tk.END, f"{idx + 1}. {student.name}")
 
-        # Add buttons to give feedback, add student, and delete student
         tk.Button(teacher_window, text="Give Feedback", command=lambda: self.give_feedback(teacher, student_list)).pack(pady=5)
         tk.Button(teacher_window, text="Add Student", command=lambda: self.add_student(teacher, student_list)).pack(pady=5)
         tk.Button(teacher_window, text="Delete Student", command=lambda: self.delete_student(teacher, student_list)).pack(pady=5)
@@ -152,14 +145,13 @@ class FeedbackApp:
         if selected_idx:
             student = teacher.students[selected_idx[0]]
             if student.name:
-                teacher.students[selected_idx[0]] = Student()  # Reset student
+                teacher.students[selected_idx[0]] = Student() 
                 student_list.delete(selected_idx)
                 messagebox.showinfo("Success", f"Student {student.name} deleted.")
         else:
             messagebox.showerror("Error", "No student selected.")
 
 
-# Run the Tkinter application
 if __name__ == "__main__":
     root = tk.Tk()
     app = FeedbackApp(root)
